@@ -1,37 +1,61 @@
-const produtos = [
-    {
-        nome: 'Banana',
-        preco: 2,
-        secao: 'Hortifruti',
-        categoria: 'fruta',
-        img: "./src/img/banana.png"
-    },
+const itens = [
     {
         nome: 'Morango',
-        preco: 2,
+        preco: 7,
         secao: 'Hortifruti',
         categoria: 'fruta',
-        img: './src/img/morango.png'
+        img: './src/img/Morango.png.png'
     },
     {
-        nome: 'Maçã',
-        preco: 2,
+        nome: 'Banana',
+        preco: 4,
         secao: 'Hortifruti',
         categoria: 'fruta',
-        img: './src/img/maça.png'
+        img: "./src/img/banana.png.png"
+    },
+    {
+        nome: 'Yorgut de Morango',
+        preco: 3,
+        secao: 'Laticínio',
+        categoria: 'yorgut',
+        img: './src/img/yorgutDeMorango.png.png'
     },
     {
         nome: 'Pão',
-        preco: 4,
+        preco: 5,
         secao: 'Panificadora',
         categoria: 'Pães',
-        img: './src/img/pao.png'
+        img: './src/img/pao.png.png'
     },
     {
         nome: 'Leite',
-        preco: 5,
+        preco: 7,
         secao: 'Laticínio',
         categoria: 'Leite',
-        img: './src/img/leite.png'
-    }
+        img: './src/img/leite.png.png'
+    },
+    {
+        nome: 'Bolo',
+        preco: 10,
+        secao: 'Panificadora',
+        categoria: 'bolos',
+        img: './src/img/bolo.png.png'
+    }, 
+    {
+        nome: 'Torta de Maçã',
+        preco: 4,
+        secao: 'Hortifruit',
+        categoria: 'frutas',
+        img: './src/img/tortaDeMaca.png.png'
+    },
+    {
+        nome: 'Maçã',
+        preco: 4,
+        secao: 'Hortifruti',
+        categoria: 'fruta',
+        img: './src/img/maca.png.png'
+    },
+   
+    
+    
 ]
