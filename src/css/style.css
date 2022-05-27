@@ -25,7 +25,7 @@ a{
     color: rgba(18, 184, 134, 1);
   
 }
-a:hover{
+a:focus{
     border: 1px solid #ffff;
     border-radius: 8px;
     padding: 10px;

@@ -14,7 +14,7 @@ const itens = [
         img: "./src/img/banana.png.png"
     },
     {
-        nome: 'Yorgut de Morango',
+        nome: 'Yorgut de morango',
         preco: 3,
         secao: 'Laticínio',
         categoria: 'yorgut',
@@ -42,7 +42,7 @@ const itens = [
         img: './src/img/bolo.png.png'
     }, 
     {
-        nome: 'Torta de Maçã',
+        nome: 'Torta de maçã',
         preco: 4,
         secao: 'Hortifruit',
         categoria: 'frutas',
