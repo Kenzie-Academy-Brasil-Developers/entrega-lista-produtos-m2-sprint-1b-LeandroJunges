@@ -1,19 +1,19 @@
 const main = document.querySelector("main")
-
+const header = document.querySelector("header")
 const divPrecoTotal = document.createElement("div")
 divPrecoTotal.classList.add("containerPrecoTotal")
 
 const precoTotal = document.createElement("p");
 precoTotal.classList.add("total")
-precoTotal.innerText= "Preço total: R$";
+precoTotal.innerText= "Valor dos produtos da sessão selecionada";
 
-let valor = document.createElement("span");
+const valor = document.createElement("p");
 valor.classList.add("preco")
-valor.innerText = `${somarProdutos(itens)},00` ;
+valor.innerText = `R$${somarProdutos(itens)},00` ;
 
-precoTotal.append(valor);
 divPrecoTotal.append(precoTotal)
-main.append(divPrecoTotal)
+divPrecoTotal.append(valor);
+header.append(divPrecoTotal)
 
 function criarCard(produto){
     const ul = document.querySelector("ul");
@@ -73,7 +73,7 @@ btnBuscar.addEventListener("click", ()=>{
 
     montarDados(funcao)
     const preco = document.querySelector(".preco")
-    preco.innerText = `${somarProdutos(funcao)},00`
+    preco.innerText = `R$${somarProdutos(funcao)},00`
 
 
 }) 
@@ -82,7 +82,7 @@ todosProdutos.addEventListener("click",()=>{
     
     montarDados(itens)
     const preco = document.querySelector(".preco")
-    preco.innerText = `${somarProdutos(itens)},00`
+    preco.innerText = `R$${somarProdutos(itens)},00`
     
 })
 
@@ -108,7 +108,7 @@ function filtrarCategoria(secao){
 
     const listaDeCategoria = itens.filter(item => item.secao == secao )
      const preco = document.querySelector(".preco")
-     preco.innerText = `${somarProdutos(listaDeCategoria)},00`
+     preco.innerText = `R$${somarProdutos(listaDeCategoria)},00`
 
     montarDados(listaDeCategoria)
 
