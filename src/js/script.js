@@ -133,7 +133,7 @@ function filtrarCategoria(secao){
 
 function filtrarProduto(){
     const input = document.querySelector(".campoBuscaPorNome").value
-    const verificarLista = itens.filter(item => item.nome.toLocaleLowerCase().includes(input) || item.secao.toLocaleLowerCase().includes(input) || item.nome.toLocaleLowerCase().includes(input) || item.nome.includes(input) ) 
+    const verificarLista = itens.filter(item => item.nome.toLocaleLowerCase().includes(input) || item.secao.toLocaleLowerCase().includes(input)|| item.categoria.toLowerCase().includes(input)) 
     return verificarLista
 }
 function carrinhoCompras(produto){
